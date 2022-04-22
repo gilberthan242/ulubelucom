@@ -186,6 +186,14 @@
           "use strict";
           window.location.reload(); 
       });
+    
+      document.addEventListener('touchstart', function(e) {
+            console.log('touchstart');
+
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            e.stopPropagation();
+        });
   </script>
 </body>
 </html>
